@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindBridge Innovative Network</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon-16x16.png">
+
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+         .hidden-content {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .expanded {
+            display: block;
+            opacity: 1;
+        }
+        .card {
+            transition: all 0.5s ease-in-out;
+        }
+        .hidden-info {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
+    transform: translateY(20px);
+}
+
+.hidden-info.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.my_card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.my_card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">MindBridge</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact-footer">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+     <!-- Hero Section -->
+<header class="hero position-relative text-center text-white">
+    <div class="overlay"></div> <!-- Add a semi-transparent overlay -->
+    <video autoplay muted loop class="background-video">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="container position-relative">
+        <h1 class="display-3 fw-bold animate-fade-in">Welcome to MindBridge Innovative Network</h1>
+        <p class="lead animate-slide-in">Innovating Minds, Inspiring Research</p>
+        <a href="#about" class="btn btn-primary btn-lg mt-4 shadow animate-pop">Learn More</a>
+    </div>
+</header>
+
+    <!-- Hero Section End -->
+<!-- crazy cool section -->
+<!-- New Section After Header -->
+<section class="new-section container py-5" style="margin-top: 50px;">
+    <div class="row g-4">
+        
+        <!-- Column 1: Our Features -->
+        <div class="col-md-3">
+            <h3 class="text-center section-title">Our Features</h3>
+            <div class="feature-box">
+                <img src="feature1.jpg" class="img-fluid rounded shadow" alt="Feature 1">
+                <p>🔹 Cutting-edge AI Research</p>
+            </div>
+            <div class="feature-box">
+                <img src="feature2.jpg" class="img-fluid rounded shadow" alt="Feature 2">
+                <p>🔹 Advanced Machine Learning Models</p>
+            </div>
+            <div class="feature-box">
+                <img src="feature3.jpg" class="img-fluid rounded shadow" alt="Feature 3">
+                <p>🔹 Innovation in Sustainable Energy</p>
+            </div>
+            <div class="feature-box">
+                <img src="feature4.jpg" class="img-fluid rounded shadow" alt="Feature 4">
+                <p>🔹 Olympiad Challenges & Competitions</p>
+            </div>
+        </div>
+
+        <!-- Column 2: Image Slider + Our Objective -->
+        <div class="col-md-6">
+            <!-- Image Slider -->
+            <div id="imageSlider" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="research.jpg" class="d-block w-100 rounded shadow" style="height: 400px; object-fit: cover;" alt="Slide 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="research2.jpg" class="d-block w-100 rounded shadow" style="height: 400px; object-fit: cover;" alt="Slide 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="research3.jpg" class="d-block w-100 rounded shadow" style="height: 400px; object-fit: cover;" alt="Slide 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="research4.jpg" class="d-block w-100 rounded shadow" style="height: 400px; object-fit: cover;" alt="Slide 4">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#imageSlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#imageSlider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+            <!-- Our Objective -->
+            <div class="objective-section mt-4">
+                <h3 class="text-center section-title">Our Objective</h3>
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <img src="objective1.jpg" class="img-fluid rounded shadow" alt="Objective">
+                    </div>
+                    <div class="col-md-8">
+                        <p>We aim to bridge the gap between research, education, and technological innovation. Our focus is on AI, sustainability, and knowledge-sharing through global competitions.</p>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- Animated Call-to-Action Section -->
+<div class="cta-section text-center mt-5 p-4 rounded shadow">
+    <h3 class="cta-title mb-4">Join Us on the Journey of Innovation</h3>
+    <p class="cta-text">Become a part of our thriving network and redefine the future with groundbreaking research and innovation.</p>
+    <a href="https://www.facebook.com/mindbridgeresearch/" class="btn btn-light btn-lg mt-3 cta-btn">Get Started</a>
+</div>
+
+        </div>
+
+        <!-- Column 3: About Our Work -->
+        <div class="col-md-3">
+            <h3 class="text-center section-title">About Our Work</h3>
+            <div class="work-box">
+                <img src="work1.jpg" class="img-fluid rounded shadow" alt="Work 1">
+                <p>🔹 Researching AI, Renewable Energy & Cognitive Science</p>
+            </div>
+            <div class="work-box">
+                <img src="work2.jpg" class="img-fluid rounded shadow" alt="Work 2">
+                <p>🔹 Organizing Olympiads & Knowledge Events</p>
+            </div>
+            <div class="work-box">
+                <img src="work3.jpg" class="img-fluid rounded shadow" alt="Work 3">
+                <p>🔹 Collaborating with Global Experts & Thinkers</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- crazy cool section end -->
+
+
+ <!-- About Section -->
+<section  id="about" class="py-5 container" style="background: linear-gradient(to right, #0f172a, #1e293b); color: white;">
+    <div class="container">
+        <div class="row align-items-center text-center text-md-start">
+            <!-- Image/Visual -->
+             
+            <div class="col-md-6 order-1 order-md-2 text-center position-relative">
+                
+                <div class="image-container">
+                    
+                    <img src="team.jpg" alt="Research Team" class="img-fluid rounded shadow-lg stylish-image">
+                </div>
+            </div>
+
+            <!-- Text Content -->
+            <div class="col-md-6 order-2 order-md-1 mt-4 mt-md-0">
+                <h2 class="text-center text-md-start fw-bold" style="color: #00d9ff;">Who We Are</h2>
+                <p style="text-align: justify;" class="lead">
+                    <strong>MindBridge Innovative Network</strong> is a global research and innovation hub dedicated to advancing knowledge, fostering collaboration, and shaping the next generation of pioneers. We specialize in cutting-edge research, organizing Olympiads and competitions, and equipping young minds with the skills needed to lead the future of science, technology, and innovation.
+                </p>
+                <ul class="text-start text-md-start">
+                    <li><strong>🚀 Innovation:</strong> Driving forward new ideas and technologies.</li>
+                    <li><strong>🌍 Collaboration:</strong> Building bridges between researchers and organizations.</li>
+                    <li><strong>🔥 Impact:</strong> Inspiring change through actionable research.</li>
+                </ul>
+                <a href="https://www.facebook.com/mindbridgeresearch/" class="btn btn-info mt-3 text-white btn-lg px-4">Get in Touch</a>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+
+
+    <!-- Research Section -->
+    <section id="research" class="bg-light py-5">
+        <div class="container">
+            <h3 style="text-align: center; padding: 1rem;"><u>OUR RESEARCH PROJECTS</u></h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="ai.webp" class="card-img-top img-fluid rounded" alt="AI and Machine Learning">
+                        <div class="card-body">
+                            <h5 style="text-align: center;" class="card-title">AI and Machine Learning</h5>
+                            <p class="card-text">
+                                At <b>MindBridge Innovative Network</b>, we research and develop cutting-edge <b>AI and Machine Learning</b> solutions, including <b>deep learning, NLP, computer vision, and ethical AI</b>.
+                            </p>
+                            <div id="moreContent" class="hidden-content">
+                                <p>
+                                    <b>🔹 Deep Learning & Neural Networks:</b> Enhancing automation, decision-making, and pattern recognition.<br>
+                                    <b>🔹 Natural Language Processing (NLP):</b> Building intelligent models for human-like communication.<br>
+                                    <b>🔹 Computer Vision:</b> AI systems for recognizing and interpreting images and videos.<br>
+                                    <b>🔹 AI Ethics & Responsible AI:</b> Ensuring transparency, fairness, and responsible AI use.<br>
+                                    <b>🔹 AI for Sustainability:</b> Addressing climate change and optimizing energy consumption.<br>
+                                    🚀 Join us in shaping the future of AI!
+                                </p>
+                            </div>
+                        <div style="text-align: center;">
+                            <button id="toggleButton" class="btn btn-primary mt-3">Learn More</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- research item 2 -->
+
+
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="energy.webp" class="card-img-top img-fluid rounded" alt="Sustainable Energy Solutions">
+                        <div class="card-body">
+                            <h5 style="text-align: center;" class="card-title">Sustainable Energy Solutions</h5>
+                            <p class="card-text">
+                                At <b>MindBridge Innovative Network</b>, we research and develop <b>sustainable energy solutions</b>, including <b>renewable energy, smart grids, and energy-efficient technologies</b>.
+                            </p>
+                            <div id="moreContentEnergy" class="hidden-content">
+                                <p>
+                                    <b>🔹 Renewable Energy:</b> Exploring solar, wind, and hydroelectric power for a greener future.<br>
+                                    <b>🔹 Smart Grids:</b> Developing intelligent energy distribution systems for efficiency and sustainability.<br>
+                                    <b>🔹 Energy Storage:</b> Innovating battery and alternative storage solutions for reliable power supply.<br>
+                                    <b>🔹 AI-Driven Optimization:</b> Leveraging AI to improve energy consumption and reduce waste.<br>
+                                    <b>🔹 Climate Impact:</b> Addressing global challenges through energy-efficient innovations.<br>
+                                    🌍 Join us in revolutionizing sustainable energy!
+                                </p>
+                            </div>
+                            <div style="text-align: center;">
+                                <button id="toggleButtonEnergy" class="btn btn-primary mt-3">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- research item 3 -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="psychology.webp" class="card-img-top img-fluid rounded" alt="Psychology and Human Behavior">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Psychology and Human Behavior</h5>
+                            <p class="card-text">
+                                At <b>MindBridge Innovative Network</b>, we explore the intricacies of <b>human psychology</b>, including <b>behavioral science, cognitive processes, and mental health research</b>.
+                            </p>
+                            <div id="moreContentPsychology" class="hidden-content">
+                                <p>
+                                    <b>🔹 Cognitive Psychology:</b> Studying memory, learning, and problem-solving techniques.<br>
+                                    <b>🔹 Behavioral Science:</b> Understanding human actions and interactions in various environments.<br>
+                                    <b>🔹 Mental Health:</b> Developing strategies to promote well-being and resilience.<br>
+                                    <b>🔹 Neuropsychology:</b> Exploring brain function and its impact on behavior.<br>
+                                    <b>🔹 Social Psychology:</b> Analyzing group dynamics, biases, and societal influences.<br>
+                                    🌟 Join us in advancing mental health and understanding human behavior!
+                                </p>
+                            </div>
+                            <div class="text-center">
+                                <button id="toggleButtonPsychology" class="btn btn-primary mt-3">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- research item 4 -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="water.webp" class="card-img-top img-fluid rounded" alt="Water Purification & Cheap Filtration Techniques">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Water Purification & Cheap Filtration Techniques</h5>
+                            <p class="card-text">
+                                At <b>MindBridge Innovative Network</b>, we develop and implement innovative solutions for <b>water purification</b> and <b>affordable filtration systems</b> to ensure clean and safe water access for all.
+                            </p>
+                            <div id="moreContentWater" class="hidden-content">
+                                <p>
+                                    <b>🔹 Advanced Filtration:</b> Utilizing cutting-edge technologies to remove contaminants efficiently.<br>
+                                    <b>🔹 Cost-Effective Methods:</b> Designing affordable and scalable filtration systems for communities in need.<br>
+                                    <b>🔹 Sustainable Practices:</b> Employing eco-friendly materials and energy-efficient methods.<br>
+                                    <b>🔹 Water Quality Monitoring:</b> Leveraging IoT and AI for real-time water quality assessments.<br>
+                                    <b>🔹 Education & Outreach:</b> Promoting awareness and training in water safety and hygiene.<br>
+                                    💧 Join us in ensuring access to clean water for all!
+                                </p>
+                            </div>
+                            <div class="text-center">
+                                <button id="toggleButtonWater" class="btn btn-primary mt-3">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- research item 5 -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="recycle.webp" class="card-img-top img-fluid rounded" alt="Plastic Waste Recycling & Eco-Bricks">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Plastic Waste Recycling & Eco-Bricks</h5>
+                            <p class="card-text">
+                                At <b>MindBridge Innovative Network</b>, we tackle the global issue of <b>plastic waste</b> through innovative <b>recycling techniques</b> and the development of <b>eco-bricks</b>.
+                            </p>
+                            <div id="moreContentPlastic" class="hidden-content">
+                                <p>
+                                    <b>🔹 Recycling Technologies:</b> Innovating efficient methods to recycle plastics into usable materials.<br>
+                                    <b>🔹 Eco-Bricks:</b> Transforming plastic waste into durable and eco-friendly construction blocks.<br>
+                                    <b>🔹 Circular Economy:</b> Promoting sustainable practices to reduce plastic dependency.<br>
+                                    <b>🔹 Community Engagement:</b> Involving local communities in waste management and recycling initiatives.<br>
+                                    <b>🔹 Research & Development:</b> Exploring biodegradable plastics and advanced polymer materials.<br>
+                                    ♻️ Join us in creating a sustainable future by addressing plastic pollution!
+                                </p>
+                            </div>
+                            <div class="text-center">
+                                <button id="toggleButtonPlastic" class="btn btn-primary mt-3">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- reseaarch item 6 -->
+
+                                <!-- research item 6 -->
+                                <div class="col-md-4">
+                                    <div class="card shadow-sm">
+                                        <img src="agri.webp" class="card-img-top img-fluid rounded" alt="Smart Agriculture: AI for Plant Growth">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">Smart Agriculture: AI for Plant Growth</h5>
+                                            <p class="card-text">
+                                                At <b>MindBridge Innovative Network</b>, we explore the potential of <b>AI</b> in revolutionizing <b>smart agriculture</b>, focusing on plant growth optimization and sustainable farming practices.
+                                            </p>
+                                            <div id="moreContentAgriculture" class="hidden-content">
+                                                <p>
+                                                    <b>🔹 Precision Farming:</b> Utilizing AI to monitor soil health, water needs, and crop growth.<br>
+                                                    <b>🔹 IoT Integration:</b> Implementing IoT sensors for real-time data on environmental conditions.<br>
+                                                    <b>🔹 Predictive Analytics:</b> Leveraging AI to forecast yields and manage risks effectively.<br>
+                                                    <b>🔹 Resource Efficiency:</b> Optimizing water usage, fertilizers, and pesticides for sustainability.<br>
+                                                    <b>🔹 Advanced Robotics:</b> Automating tasks like planting, harvesting, and weed control.<br>
+                                                    🌾 Join us in transforming agriculture with cutting-edge technology!
+                                                </p>
+                                            </div>
+                                            <div class="text-center">
+                                                <button id="toggleButtonAgriculture" class="btn btn-primary mt-3">Learn More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                
+            </div>
+
+            
+        </div>
+
+
+        
+    </section>
+
+    <!-- Events Section -->
+
+    <!-- Events Section -->
+<section id="events" class="container py-5">
+    <h2 class="text-center">Events & Olympiads</h2>
+    <p class="text-center">Join our upcoming research events and Olympiads across various disciplines!</p>
+
+    <div class="row g-4 mt-4">
+        <!-- Math Olympiad -->
+        <div class="col-md-4">
+            <div class="my_card card shadow-sm">
+                <img src="math.webp" class="card-img-top img-fluid rounded" alt="Math Olympiad">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Math Olympiad</h5>
+                    <p class="card-text text-center">Dive into challenging mathematical problems and showcase your skills!</p>
+                    <div class="hidden-info">
+                        <p><b>Details:</b> Participate in individual and team challenges. Prizes await the winners!</p>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary toggle-button">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Physics Olympiad -->
+        <div class="col-md-4">
+            <div class="my_card card shadow-sm">
+                <img src="physics_olympiad.webp" class="card-img-top img-fluid rounded" alt="Physics Olympiad">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Physics Olympiad</h5>
+                    <p class="card-text text-center">Explore the mysteries of the universe and test your physics knowledge!</p>
+                    <div class="hidden-info">
+                        <p><b>Details:</b> Solve theoretical and experimental problems. Win exciting prizes!</p>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary toggle-button">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chemistry Olympiad -->
+        <div class="col-md-4">
+            <div class="my_card card shadow-sm">
+                <img src="chemistry_olympiad.webp" class="card-img-top img-fluid rounded" alt="Chemistry Olympiad">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Chemistry Olympiad</h5>
+                    <p class="card-text text-center">Unleash your inner scientist with exciting chemistry challenges!</p>
+                    <div class="hidden-info">
+                        <p><b>Details:</b> Engage in theoretical and practical chemistry problems. Great rewards await!</p>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary toggle-button">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Biology Olympiad -->
+        <div class="col-md-4">
+            <div class="my_card card shadow-sm">
+                <img src="biology_olympiad.webp" class="card-img-top img-fluid rounded" alt="Biology Olympiad">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Biology Olympiad</h5>
+                    <p class="card-text text-center">Discover the wonders of life sciences and demonstrate your knowledge!</p>
+                    <div class="hidden-info">
+                        <p><b>Details:</b> Participate in biology quizzes, research projects, and exciting challenges!</p>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary toggle-button">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ICT Olympiad -->
+        <div class="col-md-4">
+            <div class="my_card card shadow-sm">
+                <img src="ict_olympiad.webp" class="card-img-top img-fluid rounded" alt="ICT Olympiad">
+                <div class="card-body">
+                    <h5 class="card-title text-center">ICT Olympiad</h5>
+                    <p class="card-text text-center">Showcase your ICT and technology skills in this innovative competition!</p>
+                    <div class="hidden-info">
+                        <p><b>Details:</b> Solve challenges in programming, networking, and IT systems. Compete to win!</p>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary toggle-button">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Debate Competition -->
+        <div class="col-md-4">
+            <div class="my_card card shadow-sm">
+                <img src="debate_competition.webp" class="card-img-top img-fluid rounded" alt="Debate Competition">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Debate Competition</h5>
+                    <p class="card-text text-center">Engage in thought-provoking debates and refine your speaking skills!</p>
+                    <div class="hidden-info">
+                        <p><b>Details:</b> Compete in teams to argue on global issues and innovative solutions!</p>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary toggle-button">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-5">
+        <h4>Stay Updated on Upcoming Events!</h4>
+        <p>Get Connected to receive notifications about our latest Olympiads and competitions.</p>
+        <button class="btn btn-success btn-lg mt-3" style="text-decoration: none; color: white;">
+            <a href="https://www.facebook.com/mindbridgeresearch/" style="text-decoration: none; color: inherit;">Get Connected</a>
+        </button>
+            </div>
+</section>
+
+
+   <!-- eevent end -->
+
+    <!-- Contact and Footer Section -->
+    <section id="contact-footer" class="footer-section">
+        <div class="container">
+            <!-- Contact Us Section -->
+            <div class="text-center mb-4">
+                <h2 class="mb-3">Contact Us</h2>
+                <p class="lead">Have questions or ideas? Reach out to us!</p>
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:mindbridgeinnovative@gmail.com" class="text-info">mindbridgeinnovative@gmail.com</a></p>
+            </div>
+    
+            <!-- Social Media Section -->
+            <div class="text-center mb-4">
+                <h4>Follow us on Social Media</h4>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/mindbridgeresearch/" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <!-- <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a> -->
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <!-- <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a> -->
+                </div>
+            </div>
+    
+            <!-- Footer Section -->
+            <div class="footer mt-4">
+                <p class="text-center">&copy; 2025 MindBridge Innovative Network. All Rights Reserved.</p>
+                <p class="text-center">
+                    <a href="#top" class="back-to-top">Back to Top</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll("a.nav-link").forEach(anchor => {
+            anchor.addEventListener("click", function(event) {
+                event.preventDefault();
+                const targetId = this.getAttribute("href").substring(1);
+                document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
+            });
+        });
+
+       
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>
